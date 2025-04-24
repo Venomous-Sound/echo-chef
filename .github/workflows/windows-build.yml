@@ -28,7 +28,7 @@ jobs:
         pyinstaller --onefile --windowed --icon=assets/echo_icon.ico main.py
 
     - name: Upload EXE artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v3.1.3
       with:
         name: EchoChef-Windows
         path: dist/EchoChef.exe
